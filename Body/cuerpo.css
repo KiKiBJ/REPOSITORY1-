@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background: rgb(148,144,228);
+    background: linear-gradient(90deg, rgba(148,144,228,0.9) 0%, rgba(250,169,126,0.9) 35%, rgba(255,132,0,0.9) 100%);
+    backdrop-filter: 5px, 5px;
+    -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
+    
+    nav{
+        width: 70%;
+        .lists{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+           display: flex;
+           list-style: none;
+           .un{
+            padding: 1px;
+            a{
+                font-size: 1.3em;
+                font-weight: bold;
+                text-decoration: none;
+                color: rgb(184, 49, 1);
+                padding: 0.8em;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    color: rgb(241, 241, 241);
+                }
+            }
+           }
+        }
+    }
+}
+
+.tittle-2 {
+    padding: 150px 0 64px 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.members {
+    gap: 2em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0 50px 0;
+    .c-members {
+        padding: 1em;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        width: 410px;
+        height: 320px;
+        background-color: blueviolet;
+        border-radius: 10px;
+        transition: ease-in-out 1s;
+        p{
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+        &:hover {
+            background-color: black;
+            transform: rotateY(-15deg) rotateX(-15deg);
+            box-shadow: -15px 20px 80px;
+            p {
+                color: white;
+            }
+            .img-members {
+                background-color: red;
+            }
+    }
+    .img-members {
+        background-color: black;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border-radius: 30%;
+        margin: 0.8em;
+        img{
+            width: 100%;
+            border-radius: 30%;
+            &:hover{
+
+            }
+
+        }
+    }
+}
+}
